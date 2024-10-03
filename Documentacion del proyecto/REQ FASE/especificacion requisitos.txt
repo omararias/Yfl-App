@@ -1,0 +1,61 @@
+# Especificación de Requisitos
+
+## Requisitos Funcionales
+1. Gestión de torneos:
+    -1.1 El sistema permitirá que el administrador haga registro y baja de distintas categorías por:
+Sexo: (varonil, femenil mixto)
+Edad: (Libre, Under#, Master, Mamás, Papás, etc)
+Modalidad: 5vs5, 7vs7
+Temporalidad: Por ° de temporada del año o por estación (EJEMPLO: 1°, 2°, 3° temporada 2024 o OTOÑO 2024)
+
+2. Gestión de equipos:
+    -2.1 El sistema permitirá al administrador dar de alta y baja equipos, los cuales podrán participar uno en cada categoría unicamente.
+Los equipos cuentan con:
+-Nombre de equipo
+-Logo de equipo
+-Responsable del equipo
+-Record del equipo
+-Lista de jugadores en roster
+
+3. Gestión de jugadores
+    -3.1 El sistema permitirá al administrador dar de alta y baja jugadores del sistema, así como moverlos entre equipos mientras aun sea la temporalidad permitida.
+    Estos jugadores cuentan con:
+    -Nombre y apellidos
+    -Número de jersey
+    -Jornadas jugadas
+    -Estado (activo/inactivo)
+    -Estadísticas (TDL, TDX, FLGS, INT, YDS, TDC)
+
+4. Visualización de estadísticas en la página web
+    -4.1 El sistema permitirá al usuario una vista del progreso de cada torneo (activo o concluido)
+    Al seleccionar el torneo deseado, se presentará:
+    -la tabla de posiciones en orden descendente (equipo n°1 al n°ultimo)
+
+    -4.2 Al dar click sobre el equipo deseado, te llevará a la ventana donde podrás ver:
+    -Historial de partidos hasta el momento (V/L, equipo rival, marcador, fecha)
+
+5. Visualización de rol de juegos
+    5.1 El sistema permitirá que el usuario consulte el rol de juego de una categoría o de una fecha en específico
+    -Se podrá consultar según el día (distintas categorías segun sexo o edad) o según torneo (podría abarcar distintos días, pero todo misma categoría)
+
+6. Resumen semanal de estadísticas
+    6.1 Tras dar por concluido el registro de estadísticas semanales, el sistema generará una gráfica que muestre las estadísticas más destacadas de los siguientes apartados:
+    -Touchdown Lanzado
+    -Touchdown Recibido
+    -Touchdown Totales
+    -Intercepciones
+
+## Requisitos NO Funcionales
+
+SEGURIDAD:
+
+	•RNF1	Protección contra ataques: Debe protegerse contra ataques comunes como inyecciones SQL, XSS, y DDoS.
+	•RNF2	Políticas de acceso: Sólo los usuarios con privilegios deben tener acceso a áreas sensibles del sistema.
+USABILIDAD:
+
+    •RNF3   Tiempo de aprendizaje: Un nuevo usuario debe ser capaz de realizar las tareas más comunes dentro de 30 minutos de uso.
+    •RNF4	Intuición de la interfaz: El sistema debe ser fácilmente comprensible para los usuarios sin necesidad de capacitación extensa.
+
+RENDIMIENTO:
+	•RNF5	Tiempo de respuesta: El sistema debe responder en menos de 2 segundos para cualquier solicitud del usuario.
+    •RNF6	Tiempo de carga: Las páginas web deben cargarse en menos de 3 segundos bajo condiciones de tráfico normal.
